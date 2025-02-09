@@ -110,8 +110,8 @@ button:hover {
 }
 
 .card {
-  width: 240px;
-  height: 230px;
+  width: 430px;
+  height: 370px;
   background-position: center;
   background-size: cover;
   border-radius: 10px;
@@ -141,10 +141,8 @@ button:hover {
 }
 
 /* Card Background Images */
-.card1 { background-image: url('img/pic-1.png'); }
-.card2 { background-image: url('img/pic-2.png'); }
-.card3 { background-image: url('img/pic-3.png'); }
-.card4 { background-image: url('img/pic-4.png'); }
+
+.card { background-image: url('img/realweb.jpg'); }
 
 /* Common Section Styles */
 .section {
@@ -311,118 +309,45 @@ button:hover {
 }
 
 /* Media Query for responsiveness */
-@media screen and (max-width: 768px) {
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px; /* Adds space between items */
-  }
-  
-  /* Optionally reduce the font-size for the nav links */
-  nav ul li a {
-    font-size: 16px;
-  }
-  .hero-projects .card {
-    width: 90%;       /* Let the card take most of the available width */
-    margin: 10px auto; /* Center the card and add vertical spacing */
-  }
+@media screen and (max-width: 480px) {
   .hero-text h1 {
-    font-size: 36px;
+    font-size: 2.3rem; /* 手机端 h1 字体较小 */
+    text-align: center;
+    margin-bottom: 20px;
   }
   
   .hero-text p {
-    font-size: 14px;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 20px;
   }
-}
-
-@media screen and (max-width: 480px) {
-  .hero-projects.carousel {
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .carousel-wrapper {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch; 
-  }
-  
-  .carousel-wrapper::-webkit-scrollbar {
-    display: none;
-  }
-  
-  .carousel-wrapper .card {
-    flex: 0 0 100%;
-    scroll-snap-align: center;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0;
-  }
-  
-  .carousel-dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  
-  .carousel-dots .dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #ccc;
-    margin: 0 4px;
-    cursor: pointer;
-  }
-  
-  .carousel-dots .dot.active {
-    background: #d2a679; 
-  }
-  
-  .container {
-    min-height: auto;
-    padding: 0 3%;
-  }
-  
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-    padding: 8px 0;
-  }
-  
   nav ul {
     flex-direction: column;
-    gap: 8px;
-  }
-  
-  nav ul li a {
-    font-size: 14px;
-  }
-  
-  .row {
-    flex-direction: column;
-    align-items: center;
     text-align: center;
   }
-  
-  .hero-text h1 {
-    font-size: 28px;
+  nav ul li {
+    margin: 10px 0;
   }
-  
-  .hero-text p {
-    font-size: 13px;
+  nav ul li a {
+    font-size: 0.7rem;
+    padding: 3.5px;
   }
-  
-  button {
-    padding: 10px 16px;
-    font-size: 12px;
+  .card {
+    width: 320px;
+    height: 290px;
+    padding: 20px 30px;
   }
-  
+  .container {
+    padding: 0 5%;
+  }
   .section {
-    padding: 30px 4%;
+    padding: 40px 5%;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .qualification-columns {
+    flex-direction: column;
   }
 }
-
-
