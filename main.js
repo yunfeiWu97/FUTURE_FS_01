@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
   /*==================== REMOVE MENU ON LINK CLICK ====================*/
   const navMenu = document.getElementById('nav-menu');
   const navLinks = document.querySelectorAll('.nav__link');
+  
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
       // Hide mobile menu if present
@@ -76,6 +77,32 @@ document.addEventListener('DOMContentLoaded', function() {
       themeButton.classList.toggle(iconTheme);
       localStorage.setItem('selected-theme', getCurrentTheme());
       localStorage.setItem('selected-icon', getCurrentIcon());
+    });
+  }
+
+  /*==================== MOBILE CAROUSEL FOR PROJECT CARDS ====================*/
+  const carouselWrapper = document.querySelector('.carousel-wrapper');
+  const dots = document.querySelectorAll('.carousel-dots .dot');
+
+  if (carouselWrapper && dots.length) {
+    carouselWrapper.addEventListener('scroll', function() {
+      const index = Math.round(carouselWrapper.scrollLeft / carouselWrapper.clientWidth);
+      dots.forEach((dot, i) => {
+        if (i === index) {
+          dot.classList.add('active');
+        } else {
+          dot.classList.remove('active');
+        }
+      });
+    });
+
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        carouselWrapper.scrollTo({
+          left: i * carouselWrapper.clientWidth,
+          behavior: 'smooth'
+        });
+      });
     });
   }
 });
