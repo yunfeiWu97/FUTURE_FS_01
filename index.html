@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Yunfei Wu</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HERO Section -->
+    <div class="container" id="home">
+      <div class="navbar">
+        <img src="img/logo.png" class="logo" alt="Logo" />
+        <nav>
+          <ul>
+            <li><a href="#home" class="nav__link">HOME</a></li>
+            <li><a href="#about" class="nav__link">ABOUT</a></li>
+            <li><a href="#skills" class="nav__link">SKILLS</a></li>
+            <!-- Replace Portfolio with Qualification -->
+            <li><a href="#qualification" class="nav__link">QUALIFICATION</a></li>
+            <li><a href="#contact" class="nav__link">CONTACT</a></li>
+          </ul>
+        </nav>
+        <!-- Burger icon removed -->
+      </div>
+      <div class="row">
+        <!-- Left Column: Personal Introduction -->
+        <div class="col hero-text">
+          <h1>Hi, I'm Yunfei Wu</h1>
+          <p>
+            I am a passionate Full-Stack Developer skilled in designing and
+            developing high-quality websites and applications. Welcome to my
+            portfolio!
+          </p>
+          <button type="button" onclick="location.href='#contact'">
+            Contact Me
+          </button>
+        </div>
+        <!-- Right Column: Project Cards -->
+        <div class="col hero-projects">
+          <div class="card card1" data-link="https://footprintgenerator.netlify.app/">
+            <h5>🌍Travel Footprint Generator</h5>
+            <p>
+              💡Enter any city worldwide, and it'll generate a visual map of your adventures!
+            </p>
+          </div>
+          <div class="card card2" data-link="https://winroadtest.netlify.app/">
+            <h5>Win Road Test App 🚗</h5>
+            <p>
+              Helps users prepare for driving tests by sharing tips.
+            </p>
+          </div>
+          <div class="card card3" data-link="https://game-of-thrones-adventure.netlify.app/">
+            <h5>Game of Thrones Adventure ⚔️</h5>
+            <p>
+              An interactive adventure game with classic BGM.
+            </p>
+          </div>
+          <div class="card card4" data-link="https://yunfeiwuwebsite.netlify.app/">
+            <h5>My 'Real' Website</h5>
+            <p>
+              😂😂😂😂
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT Section -->
+    <section id="about" class="section about">
+      <div class="content-wrapper desert-bg">
+        <h2>About Me</h2>
+        <p>
+          I have extensive experience in web development, blending creative design
+          with robust back-end systems. Inspired by the timeless beauty of the desert and Winnipeg's dry climate🤣
+          my work embodies elegance, depth, and warmth.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS Section -->
+    <section id="skills" class="section skills">
+      <div class="content-wrapper desert-bg">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>HTML / CSS / JavaScript</li>
+          <li>React / Vue.js</li>
+          <li>Node.js / Express</li>
+          <li>Python / Django</li>
+          <li>SQL / NoSQL Databases</li>
+          <li>Git</li>
+          <li>Power BI</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- QUALIFICATION Section (Education & Experience) -->
+    <section id="qualification" class="section qualification">
+      <div class="content-wrapper desert-bg">
+        <h2>Qualification</h2>
+        <div class="qualification-columns">
+          <!-- Education Column -->
+          <div class="qualification-column">
+            <h3>Education</h3>
+            <div class="qualification-item">
+              <h4>Application Development & Delivery</h4>
+              <p>RRC Polytechnic</p>
+              <p>GPA 4.5</p>
+              <p>2024 - Graduating in 2026</p>
+              
+              <br><p>- Participated in coding challenges and hackathons during front-end and Python courses, achieving A+ grades.
+                <br>- Collaborated with classmates on extracurricular projects.
+                <br>
+                - Volunteer for 2024 Inspiration Conference.</div>
+              </p>
+            <div class="qualification-item">
+              <h4>Bachelor of Business Analyst</h4>
+              <p>INTI International University</p>
+              <p>2017 - 2020</p>
+              <br><p>- Organized Power BI workshops as a member of the Business Analytics Society. <br>
+                - Led a Tech for Good Club project, creating prototypes for nonprofits to track donations.
+                <br> - Received the Dean's List Award twice.</p>
+            </div>
+          </div>
+          <!-- Experience Column -->
+          <div class="qualification-column">
+            <h3>Experience</h3>
+            <div class="qualification-item">
+              <h4>Full-stack Developer</h4>
+              <p>Studio Boreas, Winnipeg</p>
+              <p>2024 - Current</p>
+              <br><p>
+                Assisted in developing the Win-Road-Test App using React, Next.js,
+                and PostgreSQL, optimizing UI and backend integration.
+              </p>
+              
+            </div>
+            <div class="qualification-item">
+              <h4>Full-stack Developer</h4>
+              <p>Runyu Software, China</p>
+              <p>2021 - 2024</p>
+              <br><p>
+                Developed end-to-end client applications from designing and coding to testing and deployment.
+              </p>
+              
+            </div>
+            <div class="qualification-item">
+              <h4>Data Analyst Intern</h4>
+              <p>PKF Malaysia</p>
+              <p>2020</p>
+              <br><p>
+                Optimized PostgreSQL databases and automated financial analysis with Python and Power BI.
+              </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT Section -->
+    <section id="contact" class="section contact">
+      <div class="content-wrapper desert-bg">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or collaboration ideas, please contact me via:</p>
+        <p>
+          <strong>Phone:</strong>
+          <a href="tel:+14312022226" class="glow-effect">+1 431 202 2226</a>
+        </p>
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:wuyunfei97@gmail.com" class="glow-effect">wuyunfei97@gmail.com</a>
+        </p>
+        <p>
+          <a href="https://www.linkedin.com/in/yunfei-wu-33632018b" target="_blank" class="linkedin-btn">
+            <i class="uil uil-linkedin"></i> LinkedIn
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER Section -->
+    <footer class="footer">
+      <div class="content-wrapper">
+        <p>&copy; 2025 Yunfei Wu. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Scroll Up Button -->
+    <a href="#home" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!-- Include external JS file -->
+    <script src="main.js"></script>
+  </body>
+</html>
