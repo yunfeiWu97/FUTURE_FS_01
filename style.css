@@ -124,7 +124,6 @@ button:hover {
   flex-direction: column;
   justify-content: flex-end;
   
-  /* 新增暗金色闪光效果 */
   position: relative;
   box-shadow: 
     0 0 10px rgba(42, 32, 6, 0.5),
@@ -133,7 +132,6 @@ button:hover {
   animation: desertGlow 2s infinite alternate;
 }
 
-/* 鼠标悬停时，微微上浮 + 光晕增强 */
 .card:hover {
   transform: translateY(-10px);
   box-shadow:
@@ -142,7 +140,6 @@ button:hover {
     0 0 50px rgba(179, 134, 22, 0.4);
 }
 
-/* 闪烁关键帧动画，营造“沙漠暗光”效果 */
 @keyframes desertGlow {
   0% {
     box-shadow: 
