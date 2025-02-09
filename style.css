@@ -111,7 +111,7 @@ button:hover {
 
 .card {
   width: 430px;
-  height: 370px;
+  height: 470px;
   background-position: center;
   background-size: cover;
   border-radius: 10px;
@@ -169,7 +169,7 @@ button:hover {
 
 /* Card Background Images */
 .card {
-  background-image: url('img/realweb.jpg');
+  background-image: url('img/AZ4.jpg');
 }
 
 
@@ -340,7 +340,7 @@ button:hover {
 /* Media Query for responsiveness */
 @media screen and (max-width: 480px) {
   .hero-text h1 {
-    font-size: 2.3rem; /* 手机端 h1 字体较小 */
+    font-size: 2.3rem; 
     text-align: center;
     margin-bottom: 20px;
   }
@@ -364,7 +364,7 @@ button:hover {
   }
   .card {
     width: 320px;
-    height: 290px;
+    height: 310px;
     padding: 20px 30px;
   }
   .container {
